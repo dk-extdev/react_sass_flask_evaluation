@@ -1,0 +1,1 @@
+from html2canvas_proxy import *

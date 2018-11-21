@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Value Solutions - Sign Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/bin/app.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <main>
+{% include 'loadingPage.html' %}
+<meta id="data" data-email="{{ email }}" data-token="{{ token }}"/>
+<div class="container">
+    <div class="row" style="padding-top: 5rem;">
+        <h1 class="center"><span class="e-value-text-yellow">E-Value</span><span
+                class="e-value-text-green"><b>Solutions</b></span></h1>
+    </div>
+    <div class="row input-field">
+        <label for="username" class="active">Username</label>
+        <input value='{{ email }}' disabled="true" id="username" type="text"/>
+    </div>
+    <div class="row input-field">
+        <label for="password">Password</label>
+        <input id="password" type="password"/>
+    </div>
+    <div class="row input-field">
+        <label for="confirmPassword">Confirm Password</label>
+        <input id="confirmPassword" type="password"/>
+    </div>
+    <div class="row">
+        <button class="col s4 offset-s4 btn e-value-green" id="signUp">Sign Up</button>
+    </div>
+</div>
+</main>
+<footer class="page-footer grey lighten-5">
+    <div class="container grey-text text-darken-3">
+      © 2018. e-value solutions, LLC. All rights reserved.
+    </div>
+</footer>
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+<script src="/static/bin/fetch.js"></script>
+<script src="/static/bin/jquery.min.js"></script>
+<script src="/static/bin/materialize.min.js"></script>
+<script src="/static/bin/signUp.js"></script>
+</body>
+</html>

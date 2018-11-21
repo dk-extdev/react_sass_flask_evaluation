@@ -1,0 +1,20 @@
+Flask
+requests
+SQLAlchemy
+Flask-SQLAlchemy
+passlib
+pyOpenSSL
+psycopg2
+sparkpost
+xlrd >= 0.9.0
+pandas
+Flask-Migrate
+boto3
+Flask-SSLify
+flask-compress
+Flask-Caching
+redis
+gunicorn
+greenlet
+gevent
+flask-cors
